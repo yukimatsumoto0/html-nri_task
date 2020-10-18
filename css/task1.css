@@ -323,38 +323,23 @@ body {
 }
 
 
-<<<<<<< HEAD
-.body_menu_contents_first_list{
-        display: flex;
-}
-
-.body_menu_contents_first_list a {
-    color: #0c419a;
-    text-decoration: none;
-=======
 .body_menu_contents_first_list {
-    padding: 5px;
-    width: calc(100%/3);
-    position: relative;
-
+    display: flex;
 }
 
 .body_menu_contents_first_list a{
     text-decoration: none;
     color: #0c419a;
->>>>>>> 2e6ee89deb3173f24aff880fd1f26dc1a8c36afb
+    vertical-align: middle;
 }
 
 .body_menu_contents_first_list li {
-    width: calc(100%/3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    min-height: 70px;
+    text-align: center;
     width: 100%;
-    min-height: 50px;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     color: #0c419a;
     border: solid 1px #ccc;
     background: #fff;
@@ -370,6 +355,7 @@ body {
     color: #333;
     position: absolute;
     left: 10px;
+    align-items: ce;
 }
 
 .body_menu_contents_second_list {
@@ -381,14 +367,7 @@ body {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-.body_menu_contents_second_list a{
-    text-decoration: none;
-    color: #0c419a;
-}
 
->>>>>>> 2e6ee89deb3173f24aff880fd1f26dc1a8c36afb
 .body_menu_contents_second_list li {
     width: calc(100%/3);
     display: flex;
@@ -476,7 +455,6 @@ body {
     list-style: none;
 }
 
-
 /* footer sns */
 .footer {
     font-family: 'Noto Sans JP'sans-serif;
@@ -511,6 +489,12 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
+}
+
+.page_menu_footer{
+    color: #0c419a;
+    font-size: 16px;
+    margin:40px 0 40px 0;
 }
 
 
