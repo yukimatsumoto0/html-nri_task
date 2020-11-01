@@ -213,13 +213,16 @@ body {
 .ref_pdf {
     background: #005bac;
     border: solid 1px #005bac;
-    display: block;
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
     margin: 50px auto 70px;
-    padding: 10px 0;
     max-width: 300px;
     width: 50%;
+}
+
+.ref_pdf a{
+    padding: 10px 0;
 }
 
 .ref_pdf_btn {
@@ -227,15 +230,23 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: white;
+    position: relative;
 }
 
 .ref_pdf_btn::before {
-    content: url(../img/body/icon_02.png);
-    font-family: icomoon;
+    content: "\03e";
+    font-size: 10px;
+    font-weight: 400;
     color: white;
-    font-size: 15px;
-    position: relative;
-    top: 15px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.ref_pdf :hover {
+    background-color: #327bbc;
+    cursor: pointer;
+    transition: all .3s
 }
 
 .ref_pdf_btn::after {
@@ -244,28 +255,45 @@ body {
     height: 15px;
 }
 
-.icon-ctrl {}
-
 /* pagemenu */
 .page_menu {
-    vertical-align: middle;
-    text-align: center;
+    display: inline-block;
 }
 
 .page_menu_first {
     width: 800px;
+    color: #0c419a;
     font-size: 16px;
     margin-top: 20px;
     padding-left: 10px;
+    padding-bottom: 1px;
     }
+
+.page_menu_first p:hover{
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+}
+
+.page_menu_first a p{
+    display: inline-block;
+}
 
 
 .page_menu_second {
     width: 800px;
     color: #0c419a;
     font-size: 16px;
-    margin-top: 20px;
     padding-right: 10px;
+}
+
+.page_menu_second a p:hover {
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+}
+
+.page_menu_second a p{
+    display: inline-block;
+    padding-bottom: 1px;
 }
 
 .page_menu a {
@@ -534,17 +562,26 @@ body {
 }
 
 .page_menu_footer{
+    width: 800px;
     color: #0c419a;
     font-size: 16px;
-    margin:40px 0 40px 0;
+    margin: 80px 0 80px 0;
 }
 
+.page_menu_footer a p{
+    display: inline-block;
+}
+
+.page_menu_footer_before:hover{
+    text-decoration: underline;
+}
 
 /* footer menu */
 .footer_navi {
-    margin: 40px auto 70px auto;
+    width: 100%;
+    max-width: 1920px;
+    margin: 40px auto;
     border-bottom: 1px solid #ccc;
-    max-width: 1286px;
 }
 
 .footer_navi_menu_row_first {
@@ -553,9 +590,9 @@ body {
 }
 
 .footer_navi_menu_box_first {
-    width: 100%;
+    width: calc(25%);
     vertical-align: top;
-    margin-left: auto;
+    margin-left: 80px;
     margin-right: auto;
     line-height: 1.5;
 }
@@ -619,7 +656,6 @@ body {
     padding-bottom: 0;
 }
 
-
 .footer_navi_menu_title p{
     font-size: 16px;
     font-weight: 700;
@@ -629,11 +665,12 @@ body {
 .footer_navi_menu_title h4::before {
     content: "\03e";
     color: #333;
-    margin: 0 6px 0 0;
-    font-size: 10px;
+    margin: 0 10px 0 0;
+    font-size: 6px;
     list-style: none;
     display: inline-block;
     text-decoration: none;
+    align-items: center;
 }
 
 .footer_navi_menu_title h4:hover{
@@ -646,6 +683,7 @@ body {
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    font-family: 'Noto Sans JP';
 }
 
 .footer_navi_menu_title_second{
@@ -664,7 +702,7 @@ body {
 .footer_navi_menu_title_second p::before {
     content: "\03e";
     color: #333;
-    margin: 0 12px 0 0;
+    margin: 0 5px 0 0;
     font-weight: 100;
     display: inline-block;
     font-size: 10px;
@@ -674,13 +712,16 @@ body {
 }
 
 .footer_navi_menu_row_second {
-    margin: 30px 10px;
+    margin: 80px auto 0 auto;
     display: flex;
 }
 
 .footer_navi_menu_box_second {
-    width: 100%;
+    width: calc(25%);
     vertical-align: top;
+    margin-left: 80px;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
 /* footer menu-2 */
