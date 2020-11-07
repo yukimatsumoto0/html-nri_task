@@ -258,6 +258,7 @@ body {
 /* pagemenu */
 .page_menu {
     display: inline-block;
+    color: #231815;
 }
 
 .page_menu_first {
@@ -351,23 +352,7 @@ body {
 }
 
 
-.body_menu_contents_first_list {
-    display: flex;
-}
-
-.body_menu_contents_first_list a{
-    text-decoration: none;
-    color: #0c419a;
-    text-decoration: none;
-    transition: all .3s;
-}
-
-.body_menu_contents_first_list li:hover{
-    background-color: #f5f5f5;
-    cursor: pointer;
-}
-
-.body_menu_contents_first_list li {
+.body_menu_contents_box li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,52 +370,18 @@ body {
     margin: 0 10px 20px 10px;
 }
 
-.body_menu_contents_second_list {
-    display: flex;
-}
-
-.body_menu_contents_first_list li::before {
-    content: "\03e";
-    font-size: 10px;
-    font-weight: 400;
-    color: #333;
-    position: absolute;
-    left: 10px;
-}
-
-
-
-.body_menu_contents_second_list li:hover{
-    background-color: #f5f5f5;
-    cursor: pointer;
-}
-
-.body_menu_contents_second_list a {
+.body_menu_contents_box a {
     color: #0c419a;
     text-decoration: none;
     transition: all .3s;
 }
 
-
-.body_menu_contents_second_list li {
-    width: calc(100%/3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 50px;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: left;
-    color: #0c419a;
-    border: solid 1px #ccc;
-    background: #fff;
-    padding: 15px 20px;
-    position: relative;
-    margin: 0 10px 20px 10px;
+.body_menu_contents_box li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
-.body_menu_contents_second_list li::before {
+.body_menu_contents_box li::before {
     content: "\03e";
     font-size: 10px;
     font-weight: 400;
@@ -438,6 +389,15 @@ body {
     position: absolute;
     left: 10px;
 }
+
+.body_menu_contents_first_list {
+    display: flex;
+}
+
+.body_menu_contents_second_list {
+    display: flex;
+}
+
 
 /* body_menu_2 */
 .body_menu_second {
